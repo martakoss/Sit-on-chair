@@ -136,7 +136,10 @@ header {
       ul {
         list-style: none;
         li {
-          display:block;
+          display:none;
+        }
+        .visible_image{
+          display: inline-block;
         }
       }
       //text in slider

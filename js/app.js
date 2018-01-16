@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(function(){
 
- 
-});
+console.log("hello");
+
+})

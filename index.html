@@ -2,10 +2,15 @@
 <html lang="pl-PL">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sit on chair</title>
   <link rel="stylesheet" href="./css/main.css"/>
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -27,11 +32,13 @@
 
       <section class="container slider">
         <div class="column">
-          <div class="left_button"><</div>
+          <div class="left_button" id="prevPicture"> < </div>
           <div class="middle_of_slider">
             <div class="slider_images">
               <ul>
                 <li class="visible_image"><img src="images/black_chair.png" alt="Black chair"></li>
+                <li><img src="images/image_2.jpg" alt="Brown wooden chair"></li>
+                <li><img src="images/image_3.jpg" alt="Orange Scandinavian chair"></li>
               </ul>
             </div>
             <article class="slider_text">
@@ -48,7 +55,7 @@
               </a>
             </article>
           </div>
-          <div class="right_button"> ></div>
+          <div class="right_button" id="nextPicture"> > </div>
         </div>
       </section>
 
