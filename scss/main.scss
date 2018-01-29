@@ -116,10 +116,19 @@ header {
     //buttons in slider
     .left_button, .right_button{
       font-size: 65px;
+      height: 65px;
+      width:65px;
+      line-height: 65px;
+      display: flex;
+      justify-content: center;
       color: $theme-color-of-website;
       user-select: none;
       cursor: pointer;
       position: absolute;
+      border-radius: 25px;
+    }
+    .left_button:hover,.right_button:hover{
+      box-shadow: 5px 5px 2px 2px black;
     }
     .left_button {
       left: 20px;
