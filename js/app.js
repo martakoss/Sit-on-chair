@@ -4,12 +4,13 @@ $(function(){
 
 var prevPictureBtn = $('#prevPicture');
 var nextPictureBtn = $('#nextPicture');
-var slider = $(".slider_images");
-var activeImage = slider.find(".visible_image");
-var sliderLength = slider.find("li").length;
-var index = activeImage.index();
 
 function nextImg (){
+  var slider = $(".slider_images");
+  var activeImage = slider.find(".visible_image");
+  var sliderLength = slider.find("li").length;
+  var index = activeImage.index();
+
   activeImage.removeClass("visible_image");
 
   if (index < sliderLength - 1){
@@ -24,6 +25,11 @@ nextPictureBtn.on("click", function (){
 })
 
 function prevImg (){
+  var slider = $(".slider_images");
+  var activeImage = slider.find(".visible_image");
+  var sliderLength = slider.find("li").length;
+  var index = activeImage.index();
+
   activeImage.removeClass("visible_image");
 
   if (index === 0 ){
